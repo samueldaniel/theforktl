@@ -87,12 +87,12 @@ body {
   border-bottom-color: rgba(255,255,255,.25);
 }
 
-.nav-masthead .nav-link .nav-link-word {
+.nav-masthead .nav-link .nav-link-word-dis {
    visibility:hidden;
 }
 
-.nav-masthead .nav-link:hover .nav-link-word,
-.nav-masthead .nav-link:focus .nav-link-word {
+.nav-masthead .nav-link:hover .nav-link-word-dis,
+.nav-masthead .nav-link:focus .nav-link-word-dis {
    visibility:visible;
 }
 
@@ -113,6 +113,12 @@ body {
     float: right;
 
   }
+}
+
+@media (max-width: 48em) {
+   .nav-link-word {
+      font-size: 0.8rem;
+   }
 }
 
 .center-block {
