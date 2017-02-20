@@ -173,14 +173,13 @@ body {
  * Affix and center
  */
 
+
 @media (min-width: 40em) {
   /* Pull out the header and footer */
-  body {
-    padding-top: 8rem;
-  }
+  html, body { overflow: auto; }
   .masthead {
-    position: fixed;
-    top: 0;
+    position: relative;
+    top: auto;
   }
   .mastfoot {
     position: fixed;
@@ -203,5 +202,10 @@ body {
   .mastfoot,
   .cover-container {
     width: 42rem;
+  }
+
+  .masthead {
+     position: fixed;
+     top: 0;
   }
 }
