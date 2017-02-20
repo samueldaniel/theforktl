@@ -172,6 +172,9 @@ body {
 
 @media (min-width: 40em) {
   /* Pull out the header and footer */
+  body {
+    padding-top: 8rem;
+  }
   .masthead {
     position: fixed;
     top: 0;
