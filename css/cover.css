@@ -28,7 +28,7 @@ html,
 body {
   height: 100%;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
-  background-image: url('static/img/diningroom.jpg');
+  background-image: url('../static/img/diningroom.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
