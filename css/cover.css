@@ -3,7 +3,7 @@ body {
   height: 100%;
 }
 body {
-  background-image: url('../static/img/image15.jpg');
+  background: url('../static/img/image10.JPG');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,6 +12,17 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: .6;
+
 }
 a,
 a:focus,
@@ -24,8 +35,8 @@ a:hover {
   background-color: transparent;
   border-bottom: .25rem solid transparent;
   border-bottom-color: rgba(255,255,255,.33);
-  padding: 1em 0 0 0;
-  margin: 0 1em;
+  padding: 1rem 0 0 0;
+  margin: 0 1rem;
 }
 
 .nav-link:hover,
@@ -41,34 +52,92 @@ a:hover {
 .nav-link:focus .nav-link-word-dis {
    visibility:visible;
 }
-.center-block {
-    margin: 0 auto;
-    text-align: center;
+.site-wrapper {
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  text-align: center;
 }
-#content {
-  margin-top: 1.5em;
+
+
+.center-block {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#navbar-container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#header {
+  padding: 1rem 1rem;
+}
+
+.meta {
+  padding: 1rem 3rem;
+  font-weight: 600;
+}
+
+/* .navbar-toggler { */
+/*   background: rgba(255,255,255,.75); */
+/* } */
+
+.collapsed > .navbar-nav,
+.collapsing > .navbar-nav,
+.show > .navbar-nav {
+  flex-direction: row;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .nav-link {
-    margin: 0 1em;
+    margin: 0 .3rem;
+  }
+  .meta {
+    text-align: center;
+  }
+  .meta.justify-content-end {
+    display: none;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767px) {
-
+  .nav-link {
+    margin: 0 .3rem;
+  }
+  .meta {
+    text-align: center;
+  }
+  .meta.justify-content-end {
+    display: none;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .meta {
+    text-align: right;
+  }
+  .meta.justify-content-center {
+    display: none;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
   .footer {
-    margin-top: 3em;
+    margin-top: 3rem;
+  }
+  #logo-text {
+    padding-left: 3rem;
+  }
+  .nav-link {
+    margin: 0 .3rem;
   }
 }
 
