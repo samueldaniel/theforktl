@@ -13,78 +13,55 @@
     <!-- Bootstrap core CSS -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/other.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="site-wrapper">
+    <div class="site-wrapper container-fluid">
       <div class="container-fluid">
-        <nav class="navbar navbar-toggleable-sm">
-          <button class="navbar-toggler navbar-toggler-left"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation">
-            <i class="fa fa-bars fa-inverse fa-2x" aria-hidden="true"></i>
-          </button>
-          <div class=".navbar-brand">
-            <img class="center-block img-fluid logo" src="static/img/the-fork.png"/>
-            <br/>
-            <img class="center-block img-fluid logo" src="static/img/at.png"/>
-            <br/>
-            <img class="center-block img-fluid logo" src="static/img/twin-lakes.png"/>
-            <br/>
-            <img class="center-block img-fluid logo" src="static/img/fork-logo.png"/>
+        <div class="row content-row" id="navigation">
+          <div class="col-lg-auto">
+            <img class="img-fluid" src="static/img/fork6-sm.png"/>
           </div>
-          <div class="collapse navbar-collapse justify-content-end align-self-start" id="navbarSupportedContent">
-            <div class="navbar-nav justify-content-center">
-              <a class="nav-link nav-item" href="static/menus/current.pdf">
+          <div class="col-lg-auto">
+            <nav class="nav">
+              <a class="nav-link" href="static/menus/current.pdf">
                 <i class="nav-icon fa fa-file fa-2x" aria-hidden="true"></i>
-                <div>menu</div>
+                <div class="nav-word">menu</div>
               </a>
-              <a class="nav-link nav-item" href="https://goo.gl/maps/R2Di3JfENwP2">
+              <a class="nav-link" href="https://goo.gl/maps/R2Di3JfENwP2">
                 <i class="nav-icon fa fa-map fa-2x" aria-hidden="true"></i>
-                <div>directions</div>
+                <div class="nav-word">directions</div>
               </a>
-              <a class="nav-link nav-item" href="http://www.facebook.com/forktl">
+              <a class="nav-link" href="http://www.facebook.com/forktl">
                 <i class="nav-icon fa fa-facebook fa-2x" aria-hidden="true"></i>
-                <div>@forktl</div>
+                <div class="nav-word">@forktl</div>
               </a>
-              <a class="nav-link nav-item" href="http://www.instagram.com/theforktl/">
+              <a class="nav-link" href="http://www.instagram.com/theforktl/">
                 <i class="nav-icon fa fa-instagram fa-2x" aria-hidden="true"></i>
-                <div>@theforktl</div>
+                <div class="nav-word">@theforktl</div>
               </a>
-              <a class="nav-link nav-item" href="http://twitter.com/forktl">
+              <a class="nav-link" href="http://twitter.com/forktl">
                 <i class="nav-icon fa fa-twitter fa-2x" aria-hidden="true"></i>
-                <div>@forktl</div>
+                <div class="nav-word">@forktl</div>
               </a>
-            </div>
+            </nav>
           </div>
-        </nav>
-      </div>
-      <div class="container-fluid fill">
+        </div>
       </div>
       <div class="container-fluid">
-        <div class="meta row justify-content-center">
-            <h4 >
-              <p><em>Along a winding country road.</em></p>
-              <p>Thursday - Saturday, 6 to 10 pm<br/>Sunday, 6 to 9 pm</p>
-              <p>For reservations call:<br/><a href="tel:15702968094" class="tel-link">(570) 296-8094</a></p>
-              <p>814 Twin Lakes Road<br/>Shohola, Pennsylvania, 18458</p>
-            </h4>
-        </div>
-        <div class="meta row justify-content-end">
-            <h4>
-              <p><em>Along a winding country road.</em></p>
-              <p>Thursday - Saturday, 6 to 10 pm<br/>Sunday, 6 to 9 pm</p>
-              <p>For reservations call:<br/><a href="tel:15702968094" class="tel-link">(570) 296-8094</a></p>
-              <p>814 Twin Lakes Road<br/>Shohola, Pennsylvania, 18458</p>
-            </h4>
+      </div>
+      <div class="container-fluid">
+        <div class="row content-row" id="meta">
+          <div class="col-sm-auto">
+            <p><em>Along a winding country road.</em></p>
+            <p>Thursday - Saturday, 6 to 10 pm<br/>Sunday, 6 to 9 pm</p>
+            <p>For reservations call:<br/><a href="tel:15702968094" class="tel-link">(570) 296-8094</a></p>
+            <p>814 Twin Lakes Road<br/>Shohola, Pennsylvania, 18458</p>
+          </div>
         </div>
       </div>
-
+    </div>
     <!-- Bootstrap core JavaScript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
@@ -94,5 +71,6 @@
       <script src="static/js/bootstrap.min.js"></script>
       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
       <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+      <script src="js/cover.js"></script>
   </body>
 </html>

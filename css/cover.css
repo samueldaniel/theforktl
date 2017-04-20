@@ -18,7 +18,7 @@ body {
 }
 body:before {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -32,31 +32,20 @@ a:focus,
 a:hover {
   color: #fff;
 }
-.navbar > div {
-  padding: 1rem 0;
-}
-.nav-link {
-  font-weight: bold;
-  color: rgba(255,255,255,1);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-  border-bottom-color: rgba(255,255,255,.33);
-  margin: 0 1rem;
-}
+/* .nav-link { */
+/*   font-weight: bold; */
+/*   color: rgba(255,255,255,1); */
+/*   background-color: transparent; */
+/*   border-bottom: .25rem solid transparent; */
+/*   border-bottom-color: rgba(255,255,255,.33); */
+/*   margin: 0 1rem; */
+/* } */
 
-.nav-link:hover,
-.nav-link:focus {
-  border-bottom-color: rgba(255,255,255,1);
-}
+/* .nav-link:hover, */
+/* .nav-link:focus { */
+/*   border-bottom-color: rgba(255,255,255,1); */
+/* } */
 
-.nav-link .nav-link-word-dis {
-   visibility:hidden;
-}
-
-.nav-link:hover .nav-link-word-dis,
-.nav-link:focus .nav-link-word-dis {
-   visibility:visible;
-}
 .site-wrapper {
   display: table;
   width: 100%;
@@ -83,10 +72,6 @@ a:hover {
   margin-right: auto;
 }
 
-#header {
-  padding: 1rem 0rem;
-}
-
 .meta {
   font-weight: 600;
 }
@@ -103,57 +88,37 @@ a:hover {
 .show > .navbar-nav {
   flex-direction: row;
 }
+.meta {
+  text-align: center;
+}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) {
-  .nav-link {
-    margin: 0 .3rem;
-  }
-  .meta {
-    text-align: center;
-  }
-  .meta.justify-content-end {
-    display: none;
-  }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
-  .nav-link {
-    margin: 0 .3rem;
+@media (max-width: 767px) {
+  .container-fluid {
+    padding: 0;
   }
-  .meta.row.justify-content-center {
-    text-align: center;
-  }
-  .meta.row.justify-content-end {
-    display: none;
+  .navbar {
+    padding: 0;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .meta.row.justify-content-center {
-    display: none;
-  }
-  .meta.row.justify-content-end {
-    margin: 0 15px;
+  .meta.row {
+    margin: 15px;
     text-align: right;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .footer {
-    margin-top: 3rem;
-  }
-  #logo-text {
-    padding-left: 3rem;
-  }
-  .nav-link {
-    margin: 0 .3rem;
-  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
 }
