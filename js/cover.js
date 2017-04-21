@@ -1,3 +1,10 @@
+$(function(){
+    $(window).on("resize", function(){
+        var height = $(window).height() - $("#fill").offset().top - $("#meta").outerHeight();
+        $("#fill").outerHeight(height);
+    }).trigger("resize");
+});
+
 var media_queries = [
     {
         "_comment": "less than 767px",

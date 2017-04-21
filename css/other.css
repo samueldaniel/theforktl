@@ -50,7 +50,7 @@ a:hover {
   border-bottom-color: rgba(255,255,255,1);
 }
 
-.site-wrapper {
+.site-wrapper.container-fluid {
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -58,18 +58,31 @@ a:hover {
   text-align: center;
 }
 
+.nav-word {
+  font-weight: bold;
+}
+
+#navigation {
+  padding: 25px 15px;
+}
+
+#meta {
+  padding: 25px 15px;
+}
 
 /* less than 767 px wide */
 @media screen and (max-width: 767px) {
   #navigation > .col-lg-auto {
     margin: 0 auto;
   }
-  .content-row {
-    padding: 1rem 0rem;
-    margin: 0 auto;
+  #meta {
+    text-align: center;
   }
   .nav {
-    margin-top: 1rem;
+    padding-top: 35px;
+  }
+  .nav-word {
+    font-weight: lighter;
   }
 }
 
@@ -78,11 +91,13 @@ a:hover {
   #navigation > .col-lg-auto {
     margin: 0 0;
   }
-  .content-row {
-    padding: 1rem 3rem;
-    margin: 0 auto;
+  #meta {
+    text-align: right;
   }
   .nav {
-    margin-top: 0rem;
+    padding-top: 0px;
+  }
+  .nav-word {
+    font-weight: bold;
   }
 }
